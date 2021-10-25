@@ -16,14 +16,11 @@ const contLangs = [
     },
 ];
 
-var langSite = 'ru';
-
-
-
 function switchToLang(lang) {
     contLangs.forEach(x => {
         document.getElementById(x.name)[x.property] = x[lang]
     });
 }
 
+var langSite = 'ru';
 switchToLang(langSite);
